@@ -1,0 +1,15 @@
+# LexGestión — permite abrir el proyecto en XAMPP como http://localhost/<carpeta>/
+# redirigiendo internamente todas las peticiones a la carpeta public/.
+# (En producción configure el DocumentRoot del servidor directamente en public/.)
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Protección adicional por si mod_rewrite no está activo.
+<FilesMatch "^\.|\.(env|sqlite|log)$|^(artisan|composer\.(json|lock)|package(-lock)?\.json|phpunit\.xml)$">
+    Require all denied
+</FilesMatch>
