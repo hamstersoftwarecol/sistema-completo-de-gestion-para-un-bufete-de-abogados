@@ -1,0 +1,29 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-Btcfp_Tg.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-UwJQ3Wv3.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/calendar.js": {
+    "file": "assets/calendar-DO-GL3xV.js",
+    "name": "calendar",
+    "src": "resources/js/calendar.js",
+    "isEntry": true
+  },
+  "resources/js/charts.js": {
+    "file": "assets/charts-CWgmSQ7a.js",
+    "name": "charts",
+    "src": "resources/js/charts.js",
+    "isEntry": true
+  }
+}
